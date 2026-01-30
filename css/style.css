@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-*{
+
+* {
     box-sizing: border-box;
 }
-body{
+
+body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -11,29 +13,35 @@ body{
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
-main{
+
+main {
     margin-right: 10px;
     margin-left: 10px;
     flex: 1;
 }
-header{
+
+header {
     padding: 12px 0px 0px 0px;
-    background-color: hsl(0, 0%, 90%);;
+    background-color: hsl(0, 0%, 90%);
+    ;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-h1{
+
+h1 {
     color: black;
     margin: 10px;
     margin: 10px 10px 0 10px;
     text-align: center;
     font-size: 2em;
 }
-.navbar{
+
+.navbar {
     margin-bottom: 10px;
 }
-.navbar ul{
+
+.navbar ul {
     background-color: hsl(0, 0%, 90%);
     list-style: none;
     padding: 0px;
@@ -42,7 +50,8 @@ h1{
     justify-content: center;
     align-items: center;
 }
-.navbar a{
+
+.navbar a {
     font-size: 1.5em;
     color: black;
     padding: 15px 24px;
@@ -53,36 +62,44 @@ h1{
     align-items: center;
     transition: background-color 0.3s ease;
 }
-.navbar a:hover{
+
+.navbar a:hover {
     border-radius: 20%;
     background-color: hsl(0, 0%, 50%);
 }
-.navbar a:active{
+
+.navbar a:active {
     background-color: hsl(0, 0%, 30%);
     font-weight: 600;
 }
-.header.icons{
+
+.header.icons {
     text-align: center;
 }
-.logo{
+
+.logo {
     display: flex;
     align-items: center;
     gap: 12px;
     justify-content: center;
 }
-.logo i{
+
+.logo i {
     color: black;
 }
-.about{
+
+.about {
     max-width: 800px;
     margin: 40px auto;
     text-align: center;
     font-style: italic;
 }
+
 .about p {
     font-size: 1.2em;
 }
-.info{
+
+.info {
     font-size: 1.2em;
     max-width: 900px;
     margin: 40px auto;
@@ -90,55 +107,66 @@ h1{
     text-align: center;
     font-style: italic;
 }
-.info h2{
+
+.info h2 {
     font-size: 2em;
     margin-bottom: 16px;
 }
-.info-features{
+
+.info-features {
     list-style: none;
     padding: 0;
     margin-top: 20px;
 }
-.info-features li{
+
+.info-features li {
     display: flex;
     align-items: center;
     gap: 10px;
     justify-content: center;
     font-size: 1.1em;
 }
-.contact{
+
+.contact {
     max-width: 700px;
     margin: 40px auto;
     text-align: center;
     font-style: italic;
 }
-.contact h2{
+
+.contact h2 {
     margin-bottom: 10px;
     font-style: italic
 }
-.contact-card{
+
+.contact-card {
     background: #f3f3f3;
     padding: 30px;
     border-radius: 8px;
 }
-.contact-card a{
+
+.contact-card a {
     text-decoration: none;
 }
-.info-tools h2{
+
+.info-tools h2 {
     font-size: 1.5em;
     text-align: center;
 }
-.tool-container{
+
+.tool-container {
     display: flex;
     gap: 30px;
     margin-top: 30px;
 }
-.tool-btn{
+
+.tool-btn {
     text-align: center;
     flex: 1;
     text-decoration: none;
 }
-.tool-btn button{
+
+.tool-btn button {
     background-color: black;
     color: white;
     font-size: 25px;
@@ -148,30 +176,37 @@ h1{
     cursor: pointer;
     border-radius: 5px;
 }
-.tool-btn button:hover{
+
+.tool-btn button:hover {
     background-color: hsl(0, 0%, 30%);
     font-size: 2em;
 }
-.tool-btn button:active{
+
+.tool-btn button:active {
     background-color: hsl(0, 0%, 45%);
     font-weight: 600;
 }
-.tool-btn p{
+
+.tool-btn p {
     margin-top: 15px;
     font-size: 1.1em;
 }
-@media screen and (max-width: 600px){
-    .tool-container{
+
+@media screen and (max-width: 600px) {
+    .tool-container {
         flex-direction: column;
     }
-    .info{
+
+    .info {
         text-align: center;
     }
 }
-.dropdown{
+
+.dropdown {
     position: relative;
 }
-.dropdown .content{
+
+.dropdown .content {
     display: none;
     position: absolute;
     top: 100%;
@@ -179,55 +214,66 @@ h1{
     background-color: hsl(0, 0%, 90%);
     min-width: 150px;
     z-index: 10;
-    box-shadow: 5px 5px 15px hsl(0, 0%, 0%,0.3);
+    box-shadow: 5px 5px 15px hsl(0, 0%, 0%, 0.3);
     border: 2px solid hsl(0, 0%, 50%);
     border-radius: 8px;
     transform: translateX(-50%);
 }
-.dropdown .content a{
+
+.dropdown .content a {
     display: block;
     padding: 10px;
     text-decoration: none;
     color: black;
 }
-.dropdown:hover .content{
+
+.dropdown:hover .content {
     display: block;
 }
-.dropdown .content a:hover{
+
+.dropdown .content a:hover {
     background-color: hsl(0, 0%, 50%);
     border-radius: 8px;
 }
-.dropdown >a::after{
+
+.dropdown>a::after {
     content: " ▾";
     display: inline-block;
     transition: transform 0.2s ease;
 }
-.dropdown:hover >a::after{
+
+.dropdown:hover>a::after {
     transform: rotate(180deg);
 }
-@media screen and (max-width: 600px){
-    .info{
+
+@media screen and (max-width: 600px) {
+    .info {
         flex-direction: column;
         align-items: center;
         text-align: center;
-    }  
+    }
 }
-footer{
+
+footer {
     text-align: center;
-    background-color: hsl(0, 0%, 90%);;
+    background-color: hsl(0, 0%, 90%);
+    ;
     color: black;
     font-size: 0.9em;
     padding: 0;
     width: 100%;
 }
-h3{
+
+h3 {
     text-align: center;
 }
-.button-wrap{
+
+.button-wrap {
     text-align: center;
     margin: 30px;
 }
-label{
+
+label {
     padding: 10px 16px;
     background-color: black;
     color: white;
@@ -238,10 +284,12 @@ label{
     font-family: sans-serif;
     display: inline-flex;
 }
-input{
+
+input {
     display: none;
 }
-#mergebtn{
+
+#mergebtn {
     font-size: 2em;
     border-radius: 15px;
     padding: 10px;
@@ -251,15 +299,18 @@ input{
     color: white;
     cursor: pointer;
 }
-#mergebtn:hover{
+
+#mergebtn:hover {
     background-color: hsl(0, 0%, 40%);
     font-size: 2em;
 }
-#mergebtn:disabled{
+
+#mergebtn:disabled {
     cursor: not-allowed;
     opacity: 0.6;
 }
-#convertbtn{
+
+#convertbtn {
     font-size: 2em;
     border-radius: 15px;
     padding: 10px;
@@ -269,15 +320,18 @@ input{
     color: white;
     cursor: pointer;
 }
-#convertbtn:hover{
+
+#convertbtn:hover {
     background-color: hsl(0, 0%, 40%);
     font-size: 2em;
 }
-#convertbtn:disabled{
+
+#convertbtn:disabled {
     cursor: not-allowed;
     opacity: 0.6;
 }
-#shrinkbtn{
+
+#shrinkbtn {
     font-size: 2em;
     border-radius: 15px;
     padding: 10px;
@@ -287,19 +341,23 @@ input{
     color: white;
     cursor: pointer;
 }
-#shrinkbtn:hover{
+
+#shrinkbtn:hover {
     background-color: hsl(0, 0%, 40%);
     font-size: 2em;
 }
-#shrinkbtn:disabled{
+
+#shrinkbtn:disabled {
     cursor: not-allowed;
     opacity: 0.6;
 }
-#preview{
+
+#preview {
     font-size: 1.3em;
     text-align: center;
 }
-#preview ul{
+
+#preview ul {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -307,41 +365,49 @@ input{
     padding: 0;
     margin: 10px 0;
 }
-#preview li{
+
+#preview li {
     display: flex;
     align-items: center;
     gap: 10px;
     margin: 6px 0;
     word-break: break-word;
 }
-#target{
+
+#target {
     font-size: 1.3em;
     text-align: center;
     border: 2px dashed #aaa;
     padding: 20px;
     cursor: pointer;
 }
-#target:active{
+
+#target:active {
     border-color: black;
     background: #eee;
 }
-#target.drag-over{
+
+#target.drag-over {
     border-color: black;
     background-color: #f5f5f5;
 }
-#message{
+
+#message {
     color: red;
     margin-top: 10px;
     text-align: center;
     font-size: 14px;
 }
-.hidden{
+
+.hidden {
     display: none;
 }
-.result{
+
+.result {
     text-align: center;
 }
-.remove-btn{
+
+.remove-btn {
     background: none;
     border: none;
     cursor: pointer;
@@ -349,32 +415,33 @@ input{
     align-items: center;
     justify-content: center;
 }
-.remove-btn:hover{
+
+.remove-btn:hover {
     transform: scale(1.2);
 }
+
 @media screen and (max-width: 600px) {
+    header {
+        padding: 10px 12px 0;
+    }
 
-  .navbar ul {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
+    .navbar ul {
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+    }
 
-  .navbar li {
-    width: 100%;
-    text-align: center;
-  }
+    .navbar a {
+        font-size: 1.1em;
+        padding: 10px 12px;
+        height: auto;
+    }
 
-  .navbar a {
-    justify-content: center;
-    font-size: 1.2em;
-    padding: 10px 0;
-  }
+    .logo {
+        gap: 8px;
+    }
 
-  .dropdown .content {
-    position: static;
-    transform: none;
-    box-shadow: none;
-    border: none;
-  }
+    .logo h1 {
+        font-size: 1.4em;
+    }
 }
