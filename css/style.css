@@ -8,7 +8,6 @@ body{
     min-height: 100vh;
     margin: 0;
     background-color: hsl(0, 0%, 90%);
-    overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
@@ -354,23 +353,28 @@ input{
     transform: scale(1.2);
 }
 @media screen and (max-width: 600px) {
-    header {
-        padding: 10px 12px 0;
-    }
-    .navbar ul {
-        justify-content: space-around;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-    .navbar a {
-        font-size: 1.1em;
-        padding: 10px 12px;
-        height: auto;
-    }
-    .logo{
-        gap: 8px;
-    }
-    .logo h1 {
-        font-size: 1.4em;
-    }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar a {
+    justify-content: center;
+    font-size: 1.2em;
+    padding: 10px 0;
+  }
+
+  .dropdown .content {
+    position: static;
+    transform: none;
+    box-shadow: none;
+    border: none;
+  }
 }
