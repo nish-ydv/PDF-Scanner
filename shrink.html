@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/5d4b6643f1.js" crossorigin="anonymous"></script>
+    <title>PDF SCANNER</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fa-regular fa-file-pdf fa-2x"></i>
+            <h1>PDF SCANNER</h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li class="dropdown">
+                    <a>Tools</a>
+                        <ul class="content">
+                            <li><a href="merge.html">Merge</a></li>
+                            <li><a href="convert.html">Convert</a></li>
+                            <li><a href="shrink.html">Shrink</a></li>
+                        </ul>
+                </li>
+                <li><a href ="about.html">About</a></li>
+                <li><a href ="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Shrink PDF</h1>
+        <h3>Reduce the file size of your PDF without losing readability.</h3>
+        <div class="button-wrap">
+            <label for = "shrinkpdf" class="filebtn">Choose Files</label><br>
+            <input type="file" multiple id="shrinkpdf" name="shrinkpdf" accept="application/pdf"><br>
+            <p id="target">Drop PDF Files Here</p><br>
+        </div>
+        <p id="preview">No Files Selected For Preview</p><br>
+        <p id="message"></p>
+        <div id="result" class="result hidden"></div>
+        <button id="shrinkbtn">Shrink PDF</button>
+    </main>
+    <footer>
+        <p>@2026 PDF scanner</p>
+    </footer>
+    <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js"></script>
+    <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+    <script src="js/shrink.js" defer></script>
+</body>
+</html>
