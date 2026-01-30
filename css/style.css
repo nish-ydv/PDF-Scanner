@@ -354,17 +354,23 @@ input{
     transform: scale(1.2);
 }
 @media screen and (max-width: 600px) {
-  .navbar ul {
-    flex-wrap: wrap;
-  }
-
-  .navbar a {
-    font-size: 1.1em;
-    padding: 10px 12px;
-    height: auto;
-  }
-
-  .logo h1 {
-    font-size: 1.4em;
-  }
+    header {
+        padding: 10px 12px 0;
+    }
+    .navbar ul {
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .navbar a {
+        font-size: 1.1em;
+        padding: 10px 12px;
+        height: auto;
+    }
+    .logo{
+        gap: 8px;
+    }
+    .logo h1 {
+        font-size: 1.4em;
+    }
 }
