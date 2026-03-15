@@ -2,7 +2,7 @@
 
 A frontend-only web app for basic PDF operations inspired by tools like iLovePDF.
 
-https://nish-ydv.github.io/PDF-Scanner/
+https://github.com/nish-ydv/leaf-pdf/
 
 ## Features (v1)
 - Merge multiple PDF files
